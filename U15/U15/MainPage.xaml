@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="U15.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U15"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="200, 10, 200, 10" HorizontalAlignment="Left">
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AuTo"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Tilte1" FontSize="40" Margin="20,0,20,0"/>
+ 
+            <TextBlock Text="Tilte2" FontSize="40" Grid.Row="2" Margin="20,0,20,0"/>
+ 
+            <TextBlock Text="Tilte3" FontSize="40" Grid.Row="4" Margin="20,0,20,0"/>
+            
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="50,0,0,0">
+                <TextBlock FontSize="24" TextWrapping="Wrap">
+                Lorem Ipsum Eest takimata dolor ipsum accusam ut rebum consequat aliquyam amet duis sit sadipscing accusam et et ipsum ipsum diam ut eleifend kasd amet dolore gubergren diam
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal" >
+                    <Rectangle Width="100" Height="30" Fill="Green"/>
+                    <Rectangle Width="100" Height="30" Fill="Black"/>
+                    <Rectangle Width="100" Height="30" Fill="Red"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Grid.Column="2" Margin="50,0,0,0">
+                <TextBlock FontSize="24" TextWrapping="Wrap">
+                Lorem Ipsum E eleifend vero no stet eos dolore stet accusam diam magna labore est iriure dolor consequat sanctus suscipit clita et possim lorem consetetur dolores amet wisi rebum
+                </TextBlock>
+                <StackPanel Orientation="Horizontal" >
+                    <Rectangle Width="100" Height="30" Fill="Red"/>
+                    <Rectangle Width="100" Height="30" Fill="Black"/>
+                    <Rectangle Width="100" Height="30" Fill="Blue"/>
+                </StackPanel>
+            </StackPanel>
+            
+
+            <StackPanel Grid.Row="5" Grid.Column="2" Margin="50,0,0,0">
+                <TextBlock FontSize="24" Grid.Row="5" Grid.Column="2" TextWrapping="Wrap">
+                Lorem Ipsum  feugiat accusam sit lorem kasd facilisis et et sed magna luptatum ut ea ad dolores duo ipsum dolor vel adipiscing et consetetur magna magna blandit aliquyam augue
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="100" Height="30" Fill="Blue"/>
+                    <Rectangle Width="100" Height="30" Fill="Black"/>
+                    <Rectangle Width="100" Height="30" Fill="Yellow"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>
